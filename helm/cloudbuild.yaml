@@ -12,3 +12,5 @@ images:
 tags: ['cloud-builders-community']
 substitutions:
   _HELM_VERSION: 3.5.4
+options:
+  logging: CLOUD_LOGGING_ONLY
