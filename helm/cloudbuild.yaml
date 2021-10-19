@@ -6,8 +6,6 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/helm:latest'
   args: ['version', '--client']
   dir: 'helm'
-  env:
-    - SKIP_CLUSTER_CONFIG=false
 images:
   - 'gcr.io/$PROJECT_ID/helm:${_HELM_VERSION}'
   - 'gcr.io/$PROJECT_ID/helm:latest'
